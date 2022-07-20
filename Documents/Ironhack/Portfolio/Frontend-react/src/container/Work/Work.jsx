@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { useState, useEffect } from "react";
 import { AppWrap } from "../../wrapper";
@@ -23,12 +23,25 @@ const Work = () => {
     });
   }, []);
 
-  const handleWorkFilter = (item) => {};
+  const handleWorkFilter = (item) => {
+    setActiveFilter(item);
+    setAnimateCard([{ y: 100, opacity: 0 }]);
+
+    setTimeout(() => {
+setAnimateCard([{ y:0, opacity: 1 }]);
+
+      if(item === 'All'){
+        setFilterWork(works);
+      }else{
+        setFilterWork(works.filter((work) => work.tags.includes(item)));
+      }
+    }, 500);
+  };
 
   return (
     <>
       <h2 className="head-text">
-        My Creative <span>Portfolio</span>
+        My <span>Portfolio</span>
       </h2>
 
       <div className="app__work-filter">
@@ -77,7 +90,7 @@ const Work = () => {
                   </motion.div>
                 </a>
 
-                <a href={work.codetLink} target="_blank" rel="noreferrer">
+                <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileHover={{ scale: [1, 0.9] }}
                     whileInView={{ scale: [0, 1] }}
@@ -90,16 +103,16 @@ const Work = () => {
               </motion.div>
             </div>
 
-<div className="app__work-content app__flex"> 
+            <div className="app__work-content app__flex">
+              <h4 className="bold-text">{work.title}</h4>
+              <p className="p-text" style={{ margin: 10 }}>
+                {work.description}
+              </p>
 
-<h4 className="bold-text">{work.title}</h4>
-<p className="p-text" style={{margin:10}}>{work.description}</p>
-
-<div className="app__work-tag app__flex">
-  <p className="p-text">{work.tags[0]}</p>
-</div>
-</div>
-
+              <div className="app__work-tag app__flex">
+                <p className="p-text">{work.tags[0]}</p>
+              </div>
+            </div>
           </div>
         ))}
       </motion.div>
@@ -107,4 +120,4 @@ const Work = () => {
   );
 };
 
-export default AppWrap(Work, 'work');
+export default AppWrap(Work, "work");

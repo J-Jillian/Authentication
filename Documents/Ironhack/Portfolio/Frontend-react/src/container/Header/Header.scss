@@ -1,3 +1,11 @@
+h1{
+  font-size: 6rem;
+  font-family: 'Canela-Thin';
+  opacity: 1;
+  letter-spacing: 4px;
+  color: #ffffff;
+}
+
 #home {
   position: relative;
   background: url("../../assets/bgIMG.png");
@@ -5,7 +13,7 @@
   background-position: center;
   background-repeat: repeat;
 
-  // disable the default padding styles
+
   .app__wrapper {
     padding: 0;
 

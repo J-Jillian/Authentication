@@ -1,7 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
+@font-face {
+  font-family: 'Canela-Medium' ;
+  src: url('../src/fonts/Canela-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Canela-Thin' ;
+  src: url('../src/fonts/Canela-Thin.otf');
+}
+
+
+@font-face {
+  font-family: 'Everett-Light-web' ;
+  src: url('../src/fonts/Everett-Light-web.ttf');
+}
+
 :root {
-  --font-base: "DM Sans", sans-serif;
+  --font-base: "Everett-Light-web";
+  --webkit-font-smoothing: antialiased;
 
   --primary-color: #FFFCF5;
   --secondary-color: #8797CB;

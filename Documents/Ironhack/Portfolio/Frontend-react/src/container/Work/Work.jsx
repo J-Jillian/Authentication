@@ -3,7 +3,7 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import { useState, useEffect } from "react";
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 import "./Work.scss";
@@ -41,7 +41,7 @@ setAnimateCard([{ y:0, opacity: 1 }]);
   return (
     <>
       <h2 className="head-text">
-        My <span>Portfolio</span>
+        Wo<span>rk</span>
       </h2>
 
       <div className="app__work-filter">
@@ -120,4 +120,9 @@ setAnimateCard([{ y:0, opacity: 1 }]);
   );
 };
 
-export default AppWrap(Work, "work");
+
+export default AppWrap(
+  MotionWrap(Work, 'app__works'),
+  "work",
+  'app__whitebg'
+  );

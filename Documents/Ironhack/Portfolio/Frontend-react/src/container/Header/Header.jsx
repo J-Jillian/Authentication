@@ -25,7 +25,7 @@ const Header = () => {
         className="app__header-img"
       >
         <h1>
-          My <span>Portfolio</span>
+        <span>Portfolio</span>
         </h1>
       </motion.div>
     </div>

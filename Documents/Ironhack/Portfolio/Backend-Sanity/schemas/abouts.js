@@ -13,6 +13,7 @@ export default{
             title:'Description',
             type:'string'
         },
+        
         {
             name:'imgUrl',
             title:'ImgUrl',

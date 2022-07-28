@@ -1,10 +1,18 @@
-h1{
+.app__header-title{
   font-size: 6rem;
   font-family: 'Canela-Thin';
   opacity: 1;
   letter-spacing: 4px;
   color: #ffffff;
+  @media screen and(max-width: 2000px) {
+   
+    font-size: 4rem;
+
+  }
+
 }
+
+
 
 #home {
   position: relative;

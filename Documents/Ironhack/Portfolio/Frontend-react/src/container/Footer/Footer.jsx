@@ -37,15 +37,15 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h3 className="head-h3-text">Let's <span>have</span> a meeting!</h3>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
-          <img src={images.email} alt="email" />
+          {/* <img src={images.email} alt="email" /> */}
           <a href="mailto:judith.mediosdigitales@gmail.com" className="p-text">judith.mediosdigitales@gmail.com</a>
         </div>
         <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
+          {/* <img src={images.mobile} alt="phone" /> */}
           <a href="tel:+ (34) 671-18 11" className="p-text">+ (34) 671-18 11</a>
         </div>
       </div>

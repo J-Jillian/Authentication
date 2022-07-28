@@ -7,6 +7,22 @@
       flex-direction: column;
     }
   }
+
+  .head-h3-text {
+    font-family: 'Canela-Thin';
+    opacity: 1;
+    letter-spacing: 4px;
+    font-size: 1.75rem;
+    font-weight: 800;
+    text-align: center;
+    color:#6b7688;
+    text-transform: capitalize;
+  
+    span {
+      color: var(--secondary-color);
+    }
+    }
+  
   
   .app__footer-cards {
     width: 60%;

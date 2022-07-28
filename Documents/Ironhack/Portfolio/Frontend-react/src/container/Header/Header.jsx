@@ -24,8 +24,8 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <h1>
-        <span>Portfolio</span>
+        <h1 className="app__header-title" >
+        <span> ...Portfolio</span>
         </h1>
       </motion.div>
     </div>

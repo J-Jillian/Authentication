@@ -53,7 +53,7 @@ const Testimonial = () => {
           </p>
           <br />
           <p className="p-text">
-          I like to think that one day I will contribute to challenging and mean full companies to create a positive impact on the world.
+          I like to think that one day I will contribute with mean full companies to create a positive impact on the world.
           </p>
         </motion.div>
       </div>
